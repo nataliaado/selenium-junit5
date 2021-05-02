@@ -12,7 +12,7 @@ public class RestorePasswordActions {
 		objResAccount = new RestoreAccountObjects(driver);
 	}
 
-	public static void restorePassword() {
+	public void restorePassword() {
 		objResAccount.getInputRestoreEmail().sendKeys("natalia@email.com");
 		objResAccount.getBtnSearch().click();
 	}

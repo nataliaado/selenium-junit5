@@ -12,24 +12,22 @@ public class HomeActions {
 		objHome = new HomeObjects(driver);
 	}
 
-	public static void login() {
+	public void login() {
 		objHome.getInputEmail().sendKeys("natalia@email.com");
 		objHome.getInputPassword().sendKeys("123456");
 		objHome.getBtnLogin().click();
 
 	}
 
-	public static void createNewAccount() {
+	public void createNewAccount() {
 		objHome.getInputName().sendKeys("Natalia");
 		objHome.getInputLastName().sendKeys("Oliveira");
 		objHome.getRadioFemale().click();
 		objHome.getBtnSignUp().click();
 	}
 
-	public static void restorePassword() {
+	public void LinkRestorePassword() {
 		objHome.getLinkForgotAccount().click();
 	}
-	
-	
-	
+
 }

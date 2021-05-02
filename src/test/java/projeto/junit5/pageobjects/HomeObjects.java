@@ -24,7 +24,7 @@ public class HomeObjects {
 	@FindBy(xpath = "//a[@data-testid]")
 	private WebElement btnNewAccount;
 
-	@FindBy(name = "firstname")
+	@FindBy(xpath = "//input[contains(@aria-label, 'Nome')]")
 	private WebElement inputName;
 
 	@FindBy(name = "lastname")
