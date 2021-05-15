@@ -29,7 +29,7 @@ class TestFacebook {
 		actRestore = new RestorePasswordActions(driver);
 	}
 
-	@Test
+	//@Test
 	void logarFacebook() throws Exception {
 		actHome.login();
 	}
@@ -39,7 +39,7 @@ class TestFacebook {
 		actHome.createNewAccount();
 	}
 
-	@Test
+	//@Test
 	void restorePassword() throws Exception {
 		actHome.LinkRestorePassword();
 		actRestore.restorePassword();

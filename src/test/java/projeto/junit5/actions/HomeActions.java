@@ -1,5 +1,6 @@
 package projeto.junit5.actions;
 
+
 import org.openqa.selenium.WebDriver;
 
 import projeto.junit5.pageobjects.HomeObjects;
@@ -19,7 +20,11 @@ public class HomeActions {
 
 	}
 
-	public void createNewAccount() {
+	public void createNewAccount() throws InterruptedException {
+		objHome.getBtnNewAccount().click();
+		
+		Thread.sleep(10000);
+
 		objHome.getInputName().sendKeys("Natalia");
 		objHome.getInputLastName().sendKeys("Oliveira");
 		objHome.getRadioFemale().click();
