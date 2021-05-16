@@ -31,7 +31,7 @@ public class HomeActions {
 		objHome.getBtnSignUp().click();
 	}
 
-	public void LinkRestorePassword() {
+	public void linkRestorePassword() {
 		objHome.getLinkForgotAccount().click();
 	}
 

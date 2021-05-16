@@ -12,8 +12,8 @@ public class RestorePasswordActions {
 		objResAccount = new RestoreAccountObjects(driver);
 	}
 
-	public void restorePassword() {
-		objResAccount.getInputRestoreEmail().sendKeys("natalia@email.com");
+	public void restorePassword(String email) {
+		objResAccount.getInputRestoreEmail().sendKeys(email);
 		objResAccount.getBtnSearch().click();
 	}
 
