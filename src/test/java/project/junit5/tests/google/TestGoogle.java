@@ -1,4 +1,4 @@
-package project.junit5.tests;
+package project.junit5.tests.google;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;

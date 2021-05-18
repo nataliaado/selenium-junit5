@@ -7,7 +7,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
 @SuiteDisplayName("Facebook and Google test suite")
-@SelectPackages("project.junit5.tests")
+@SelectPackages({"project.junit5.tests.facebook", "project.junit5.tests.google"})
+//@ExcludePackages("project.junit5.tests.facebook")
 public class TestRunner {
 
 }
