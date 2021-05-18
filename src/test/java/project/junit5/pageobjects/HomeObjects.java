@@ -1,4 +1,4 @@
-package projeto.junit5.pageobjects;
+package project.junit5.pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

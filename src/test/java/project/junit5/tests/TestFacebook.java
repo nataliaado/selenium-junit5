@@ -1,4 +1,4 @@
-package projeto.junit5.tests;
+package project.junit5.tests;
 
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
@@ -12,8 +12,8 @@ import org.junit.jupiter.params.provider.ValueSource;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import projeto.junit5.actions.HomeActions;
-import projeto.junit5.actions.RestorePasswordActions;
+import project.junit5.actions.HomeActions;
+import project.junit5.actions.RestorePasswordActions;
 
 class TestFacebook {
 
@@ -23,7 +23,7 @@ class TestFacebook {
 
 	@BeforeAll
 	static void initTests() {
-		System.out.println("BeforeAll tests initiated");
+		System.out.println("Before All tests initiated");
 	}
 
 	@BeforeEach
@@ -40,14 +40,12 @@ class TestFacebook {
 		actRestore = new RestorePasswordActions(driver);
 	}
 
-	@Disabled()
 	@Test
 	@Tag("credentials")
 	void logarFacebook() throws Exception {
 		actHome.login();
 	}
 
-	@Disabled()
 	@Test
 	@Tag("credentials")
 	void createAccount() throws Exception {
@@ -55,9 +53,9 @@ class TestFacebook {
 	}
 
 	@ParameterizedTest
-	@ValueSource(strings= {"natalia@email.com", "maria@gmail.com", "joao@email.com.br"})
+	@ValueSource(strings = { "natalia@email.com", "maria@gmail.com", "joao@email.com.br" })
 	@Tag("restore")
-	void restoreAccount(String email) throws Exception {		
+	void restoreAccount(String email) throws Exception {
 		actHome.linkRestorePassword();
 		actRestore.restorePassword(email);
 	}
@@ -69,6 +67,6 @@ class TestFacebook {
 
 	@AfterAll
 	static void finishTests() {
-		System.out.println("The tests have been completed with AfterAll");
+		System.out.println("The tests have been completed with After All");
 	}
 }

@@ -1,8 +1,8 @@
-package projeto.junit5.actions;
+package project.junit5.actions;
 
 import org.openqa.selenium.WebDriver;
 
-import projeto.junit5.pageobjects.RestoreAccountObjects;
+import project.junit5.pageobjects.RestoreAccountObjects;
 
 public class RestorePasswordActions {
 

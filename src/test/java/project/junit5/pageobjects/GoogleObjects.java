@@ -1,31 +1,31 @@
-package projeto.junit5.pageobjects;
+package project.junit5.pageobjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class RestoreAccountObjects {
+public class GoogleObjects {
 
 	private WebDriver driver;
 
-	@FindBy(id = "identify_email")
-	private WebElement inputRestoreEmail;
+	@FindBy(name = "q")
+	private WebElement inputSearch;
 
-	@FindBy(id = "did_submit")
+	@FindBy(name = "btnK")
 	private WebElement btnSearch;
 
-	public RestoreAccountObjects(WebDriver driver) {
+	public GoogleObjects(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 		this.driver = driver;
 	}
 
-	public WebElement getInputRestoreEmail() {
-		return inputRestoreEmail;
+	public WebElement getInputSearch() {
+		return inputSearch;
 	}
 
-	public void setInputRecoverEmail(WebElement inputRestoreEmail) {
-		this.inputRestoreEmail = inputRestoreEmail;
+	public void setInputSearch(WebElement inputSearch) {
+		this.inputSearch = inputSearch;
 	}
 
 	public WebElement getBtnSearch() {
