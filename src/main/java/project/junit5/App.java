@@ -1,4 +1,4 @@
-package projeto.junit5;
+package project.junit5;
 
 /**
  * Hello world!

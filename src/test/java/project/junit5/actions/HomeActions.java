@@ -2,7 +2,6 @@ package project.junit5.actions;
 
 
 import org.openqa.selenium.WebDriver;
-
 import project.junit5.pageobjects.HomeObjects;
 
 public class HomeActions {
